@@ -1,0 +1,635 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"  "http://www.w3.org/TR/html4/strict.dtd">
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+ <!--<![endif]-->
+ <head profile="http://gmpg.org/xfn/11">
+  <script>
+   window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};
+  </script>
+  <!-- End Wayback Rewrite JS Include -->
+  <link href="http://gmpg.org/xfn/11" rel="profile"/>
+  <meta content="text/html;chartset=UTF-8" http-equiv="content-type"/>
+  <link href="http://alexeyvishnevsky.com/xmlrpc.php" rel="pingback"/>
+  <meta charset="utf-8"/>
+  <title>
+   Python as an optimal solution for today’s network application programming challenges. | Alexey Vishnevsky
+  </title>
+  <!-- SEO Ultimate (http://www.seodesignsolutions.com/wordpress-seo/) -->
+  <meta content="article" property="og:type">
+   <meta content="Python as an optimal solution for today’s network application programming challenges." property="og:title"/>
+   <meta content="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/2013/11/python-as-an-optimal-solution-for-todays-network-application-programming-challenges/" property="og:url"/>
+   <meta content="2013-11-03" property="article:published_time"/>
+   <meta content="2015-11-12" property="article:modified_time"/>
+   <meta content="http://alexeyvishnevsky.com/author/aliowka/" property="article:author"/>
+   <meta content="APM" property="article:tag"/>
+   <meta content="Networking" property="article:tag"/>
+   <meta content="Python" property="article:tag"/>
+   <meta content="Scalability" property="article:tag"/>
+   <meta content="Alexey Vishnevsky" property="og:site_name"/>
+   <meta content="summary" name="twitter:card"/>
+   <!-- /SEO Ultimate -->
+   <link href="//web.archive.org/web/20201130133547/http://s0.wp.com/" rel="dns-prefetch"/>
+   <link href="//web.archive.org/web/20201130133547/http://cdn.jquerytools.org/" rel="dns-prefetch"/>
+   <link href="//web.archive.org/web/20201130133547/http://s.w.org/" rel="dns-prefetch"/>
+   <link href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/feed/" rel="alternate" title="Alexey Vishnevsky » Feed" type="application/rss+xml"/>
+   <link href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/comments/feed/" rel="alternate" title="Alexey Vishnevsky » Comments Feed" type="application/rss+xml"/>
+   <link href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/2013/11/python-as-an-optimal-solution-for-todays-network-application-programming-challenges/feed/" rel="alternate" title="Alexey Vishnevsky » Python as an optimal solution for today’s network application programming challenges. Comments Feed" type="application/rss+xml"/>
+   <style type="text/css">
+    img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+   </style>
+   <style id="news-typewriter-inline-css" type="text/css">
+    .pearl-type-wrap {
+                     background-color: #f0f0f0;
+                     border-color: #CCCCCC;
+                     border-style: solid;
+                     border-width: 1px;
+                     padding: 10px;
+                     border-radius: 5px;
+                }
+                
+                .pearl-type-wrap {
+                     font-color: #000000;
+                     font-size: 14px;
+                     letter-spacing: 2px;
+                   
+                }
+   </style>
+   <link href="http://alexeyvishnevsky.com/wp-json/" rel="https://api.w.org/"/>
+   <link href="http://alexeyvishnevsky.com/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+   <link href="http://alexeyvishnevsky.com/wp-includes/wlwmanifest.xml" rel="wlwmanifest" type="application/wlwmanifest+xml"/>
+   <link href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/2013/11/tips-on-optimizing-scrapy-for-a-high-performance/" rel="prev" title="Tips on optimizing scrapy for a high performance"/>
+   <link href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/2014/01/scraping-blogs-finding-repeating-patterns-dom-tree/" rel="next" title="Extracting textual time-based content from blog page using LCA techique on a DOM tree."/>
+   <meta content="WordPress 4.7.19" name="generator"/>
+   <link href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/2013/11/python-as-an-optimal-solution-for-todays-network-application-programming-challenges/" rel="canonical"/>
+   <link href="http://web.archive.org/web/20201130133547/http://wp.me/p8qzTL-4" rel="shortlink"/>
+   <link href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Falexeyvishnevsky.com%2F2013%2F11%2Fpython-as-an-optimal-solution-for-todays-network-application-programming-challenges%2F" rel="alternate" type="application/json+oembed"/>
+   <link href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Falexeyvishnevsky.com%2F2013%2F11%2Fpython-as-an-optimal-solution-for-todays-network-application-programming-challenges%2F&amp;format=xml" rel="alternate" type="text/xml+oembed"/>
+   <link href="//web.archive.org/web/20201130133547/http://v0.wordpress.com/" rel="dns-prefetch"/>
+   <style type="text/css">
+    img#wpstats{display:none}
+   </style>
+   <style type="text/css">
+    .recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}
+   </style>
+  </meta>
+  <link href="../../../css/main.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body class="post-template-default single single-post postid-4 single-format-standard">
+  <div id="header">
+   <a class="title" href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/">
+    <div id="title">
+     Alexey Vishnevsky
+    </div>
+   </a>
+   <div id="description">
+    There is always one more bug to fix
+   </div>
+  </div>
+  <div id="nav-container">
+   <div id="nav">
+    <div class="menu">
+     <div class="nav">
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="clear">
+  </div>
+  <div id="container">
+   <div class="post-4 post type-post status-publish format-standard hentry category-apm category-networking category-python category-scalability">
+    <h1>
+     <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/2013/11/python-as-an-optimal-solution-for-todays-network-application-programming-challenges/">
+      Python as an optimal solution for today’s network application programming challenges.
+     </a>
+    </h1>
+    <div class="date">
+     November 3, 2013
+    </div>
+    <p>
+     Recently I have made a brief exploration of local job market and have found a simple fact – Python is greatly misunderstood and as a result – extremely underestimated.
+    </p>
+    <p>
+     Having an experience of being employed by different software developing companies, I have heard many times from technical people that Python is slow and doesn’t have a real threading mechanism and due to the lack of static types it’s error-prone; that some of the “basic” OOP stuff is missing there and this is more like a toy language with no real use in production environment… So I felt a deep need to write an introduction to Python for potential users, employers and to all who may be interested. It might be of great use for business owners and start-up runners as well as for technical people.
+    </p>
+    <p>
+     <strong>
+      Introduction.
+     </strong>
+    </p>
+    <p>
+     1. “Python is a programming language that allows you to work more quickly and integrate your systems more effectively. You can learn to use Python and see almost immediate gains in productivity and lower maintenance costs.” – From my personal experience the development on Python is about 3 times faster then on Java.
+    </p>
+    <p>
+     2. “Python runs on Windows, Linux/Unix, Mac OS X, and has been ported to the Java and .NET virtual machines.” – and I would add also all of
+     <a href="http://web.archive.org/web/20201130133547/http://www.python.org/download/other/" target="_blank">
+      them
+     </a>
+     .
+    </p>
+    <p>
+     3. “Python is free to use, even for commercial products, because of its OSI-approved
+     <a href="http://web.archive.org/web/20201130133547/http://www.python.org/psf/license/">
+      open source license
+     </a>
+     .”
+    </p>
+    <p>
+     <strong>
+      The world is changing. Reactive Manifesto.
+     </strong>
+    </p>
+    <p>
+     First of all I would like you to introduce a
+     <a href="http://web.archive.org/web/20201130133547/http://www.reactivemanifesto.org/" target="_blank">
+      reactive application manifesto
+     </a>
+     .
+    </p>
+    <p>
+     It has been recently created to name the changes that are remarkably  taking place in nowadays requirements to a network application.
+     <a href="http://web.archive.org/web/20201130133547/http://www.reactivemanifesto.org/" target="_blank">
+      Reactive application manifesto
+     </a>
+     lists the rules that application has to comply with, namely – scalability, responsiveness and resilience. It clearly says that scalability and responsiveness are all about asynchronous programming models (APM).
+    </p>
+    <p>
+     <strong>
+      Responsiveness.
+     </strong>
+    </p>
+    <p>
+     A year ago I’ve written a post about
+     <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/?p=8" target="_blank">
+      asynchronous programming with python
+     </a>
+     , where I explained the advantages of APM over threading model. There I claimed that Python is actually excels APM in respect to simplicity of code writing. Having one of the largest official
+     <a href="http://web.archive.org/web/20201130133547/https://pypi.python.org/pypi" target="_blank">
+      repository
+     </a>
+     of open source code (
+     <strong>
+      36195
+     </strong>
+     <b>
+     </b>
+     packages as of time of writing the current post), Python can offer many different libraries that make it dead-easy to write an APM based code. While the most advanced of them is
+     <a href="http://web.archive.org/web/20201130133547/http://twistedmatrix.com/" target="_blank">
+      Twisted
+     </a>
+     – event driven networking engine.
+    </p>
+    <p>
+     <a href="gregorybegelman.com" target="_blank">
+      Gregory Begelman
+     </a>
+     describes
+     <a href="http://web.archive.org/web/20201130133547/http://blog.gregorybegelman.com/crawling-the-web-with-scrapy/" target="_blank">
+      here
+     </a>
+     how we built APM crawlers system on top of
+     <a href="http://web.archive.org/web/20201130133547/http://scrapy.org/" target="_blank">
+      scrapy
+     </a>
+     that is being able to scrape simultaneously 2000 domains on one machine with 8 cores and 32G of RAM. In
+     <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/?p=26">
+      this post
+     </a>
+     I elaborate it even further.
+    </p>
+    <p>
+     <strong>
+      Scalability and Resilience.
+     </strong>
+    </p>
+    <p>
+     Today the major players on the market such as Google, Facebook, Yahoo, Youtube and
+     <a href="http://web.archive.org/web/20201130133547/https://wiki.python.org/moin/OrganizationsUsingPython">
+      many others
+     </a>
+     use Python as part of their core infrastructure.
+    </p>
+    <p>
+     Such well-known and commonly used computing systems as
+     <a href="http://web.archive.org/web/20201130133547/http://aws.amazon.com/" target="_blank">
+      Amazone Web Services
+     </a>
+     ,
+     <a href="http://web.archive.org/web/20201130133547/https://developers.google.com/appengine/" target="_blank">
+      Google AppEngine
+     </a>
+     ,
+     <a href="http://web.archive.org/web/20201130133547/http://hadoop.apache.org/" target="_blank">
+      Appache Hadoop
+     </a>
+     and
+     <a href="http://web.archive.org/web/20201130133547/http://discoproject.org/" target="_blank">
+      Nokia Disco
+     </a>
+     have been integrated with Python as well.
+    </p>
+    <p>
+     Thereby, Python is perfect for reactive application model that is described above. Considering its simplicity in use and its open source nature with a mature community and huge repository, I conclude that Python is an optimal, best and the most efficient choice for today’s network application programming needs and challenges.
+    </p>
+    <div class="addtoany_share_save_container addtoany_content addtoany_content_bottom">
+     <div class="a2a_kit a2a_kit_size_32 addtoany_list" data-a2a-title="Python as an optimal solution for today’s network application programming challenges." data-a2a-url="http://alexeyvishnevsky.com/2013/11/python-as-an-optimal-solution-for-todays-network-application-programming-challenges/">
+      <a class="a2a_button_facebook" href="http://web.archive.org/web/20201130133547/https://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Falexeyvishnevsky.com%2F2013%2F11%2Fpython-as-an-optimal-solution-for-todays-network-application-programming-challenges%2F&amp;linkname=Python%20as%20an%20optimal%20solution%20for%20today%E2%80%99s%20network%20application%20programming%20challenges." rel="nofollow noopener" target="_blank" title="Facebook">
+      </a>
+      <a class="a2a_button_twitter" href="http://web.archive.org/web/20201130133547/https://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Falexeyvishnevsky.com%2F2013%2F11%2Fpython-as-an-optimal-solution-for-todays-network-application-programming-challenges%2F&amp;linkname=Python%20as%20an%20optimal%20solution%20for%20today%E2%80%99s%20network%20application%20programming%20challenges." rel="nofollow noopener" target="_blank" title="Twitter">
+      </a>
+      <a class="a2a_button_google_plus" href="http://web.archive.org/web/20201130133547/https://www.addtoany.com/add_to/google_plus?linkurl=http%3A%2F%2Falexeyvishnevsky.com%2F2013%2F11%2Fpython-as-an-optimal-solution-for-todays-network-application-programming-challenges%2F&amp;linkname=Python%20as%20an%20optimal%20solution%20for%20today%E2%80%99s%20network%20application%20programming%20challenges." rel="nofollow noopener" target="_blank" title="Google+">
+      </a>
+      <a class="a2a_button_pinterest" href="http://web.archive.org/web/20201130133547/https://www.addtoany.com/add_to/pinterest?linkurl=http%3A%2F%2Falexeyvishnevsky.com%2F2013%2F11%2Fpython-as-an-optimal-solution-for-todays-network-application-programming-challenges%2F&amp;linkname=Python%20as%20an%20optimal%20solution%20for%20today%E2%80%99s%20network%20application%20programming%20challenges." rel="nofollow noopener" target="_blank" title="Pinterest">
+      </a>
+      <a class="a2a_button_reddit" href="http://web.archive.org/web/20201130133547/https://www.addtoany.com/add_to/reddit?linkurl=http%3A%2F%2Falexeyvishnevsky.com%2F2013%2F11%2Fpython-as-an-optimal-solution-for-todays-network-application-programming-challenges%2F&amp;linkname=Python%20as%20an%20optimal%20solution%20for%20today%E2%80%99s%20network%20application%20programming%20challenges." rel="nofollow noopener" target="_blank" title="Reddit">
+      </a>
+      <a class="a2a_button_hacker_news" href="http://web.archive.org/web/20201130133547/https://www.addtoany.com/add_to/hacker_news?linkurl=http%3A%2F%2Falexeyvishnevsky.com%2F2013%2F11%2Fpython-as-an-optimal-solution-for-todays-network-application-programming-challenges%2F&amp;linkname=Python%20as%20an%20optimal%20solution%20for%20today%E2%80%99s%20network%20application%20programming%20challenges." rel="nofollow noopener" target="_blank" title="Hacker News">
+      </a>
+      <a class="a2a_dd addtoany_share_save addtoany_share" href="http://web.archive.org/web/20201130133547/https://www.addtoany.com/share">
+      </a>
+     </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="comments">
+     <div class="show-comments">
+      <div class="commentline">
+      </div>
+      <div class="countcomments">
+      </div>
+      <div class="commentform">
+       <div class="comment-respond" id="respond">
+        <h3 class="comment-reply-title" id="reply-title">
+         Leave a Reply
+         <small>
+          <a href="/web/20201130133547/http://alexeyvishnevsky.com/2013/11/python-as-an-optimal-solution-for-todays-network-application-programming-challenges/#respond" id="cancel-comment-reply-link" rel="nofollow" style="display:none;">
+           Cancel reply
+          </a>
+         </small>
+        </h3>
+        <form action="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/wp-comments-post.php" class="comment-form" id="commentform" method="post">
+         <p class="comment-notes">
+          <span id="email-notes">
+           Your email address will not be published.
+          </span>
+         </p>
+         <p class="comment-form-comment">
+          <label for="comment">
+           Comment
+          </label>
+          <textarea aria-required="true" id="comment" name="comment" rows="8"></textarea>
+         </p>
+         <p class="comment-form-author">
+          <label for="author">
+           Name
+          </label>
+          <span class="required">
+           *
+          </span>
+          <input id="author" name="author" size="30" type="text" value=""/>
+         </p>
+         <p class="comment-form-email">
+          <label for="email">
+           Email
+          </label>
+          <span class="required">
+           *
+          </span>
+          <input id="email" name="email" size="30" type="text" value=""/>
+         </p>
+         <p class="comment-form-url">
+          <label for="url">
+           Website
+          </label>
+          <input id="url" name="url" size="30" type="text" value=""/>
+         </p>
+         <p class="form-submit">
+          <input class="submit" id="submit" name="submit" type="submit" value="Post Comment"/>
+          <input id="comment_post_ID" name="comment_post_ID" type="hidden" value="4"/>
+          <input id="comment_parent" name="comment_parent" type="hidden" value="0"/>
+         </p>
+         <p style="display: none;">
+          <input id="akismet_comment_nonce" name="akismet_comment_nonce" type="hidden" value="de9fd178d3"/>
+         </p>
+         <p style="display: none;">
+          <input id="ak_js" name="ak_js" type="hidden" value="9"/>
+         </p>
+        </form>
+       </div>
+       <!-- #respond -->
+       <div style="clear:both;">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="border-bottom">
+   </div>
+  </div>
+  <div class="clear">
+  </div>
+  <div id="sidebar">
+   <div id="sidebar-widget">
+    <form action="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/" id="searchform" method="get">
+     <input class="search-sidebar" id="s" name="s" onblur="if (this.value=='') this.value='Search ...'" onfocus="if (this.value=='Search ...') this.value='';" value="Search ..."/>
+    </form>
+   </div>
+   <div id="sidebar-widget">
+    <div class="sidebar-heading">
+     Recent Posts
+    </div>
+    <ul>
+     <li>
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/2018/03/reinventing-quick-sort/">
+       Reinventing Quick Sort by improving Stupid Sort.
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/2017/01/ssdb-redis/">
+       SSDB as a cheaper alternative to Redis
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/2015/10/chess-com-conquered/">
+       Mission Impossible! Or how to beat a chess computer at impossible level.
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/2015/05/lua-wraped-python/">
+       Lua as a Python’s secret weapon.
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/2015/02/yahoochessmaster-r-i-p/">
+       Yahoo ChessMaster R.I.P
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="sidebar-widget">
+    <div class="sidebar-heading">
+     Recent Comments
+    </div>
+    <ul id="recentcomments">
+     <li class="recentcomments">
+      <span class="comment-author-link">
+       Massimo
+      </span>
+      on
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/2015/05/lua-wraped-python/#comment-742">
+       Lua as a Python’s secret weapon.
+      </a>
+     </li>
+     <li class="recentcomments">
+      <span class="comment-author-link">
+       Italo Maia
+      </span>
+      on
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/2015/05/lua-wraped-python/#comment-739">
+       Lua as a Python’s secret weapon.
+      </a>
+     </li>
+     <li class="recentcomments">
+      <span class="comment-author-link">
+       <a class="url" href="http://web.archive.org/web/20201130133547/https://www.physicsforums.com/threads/comparison-of-high-level-computer-programming-languages.912188/page-3#post-6041230" rel="external nofollow">
+        Comparison of high-level computer programming languages | Page 3 | Physics Forums
+       </a>
+      </span>
+      on
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/2015/05/lua-wraped-python/#comment-721">
+       Lua as a Python’s secret weapon.
+      </a>
+     </li>
+     <li class="recentcomments">
+      <span class="comment-author-link">
+       <a class="url" href="http://web.archive.org/web/20201130133547/https://www.physicsforums.com/threads/is-assembly-language-still-being-used.942471/#post-5963048" rel="external nofollow">
+        Is assembly language still being used? | Physics Forums - The Fusion of Science and Community
+       </a>
+      </span>
+      on
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/2015/05/lua-wraped-python/#comment-670">
+       Lua as a Python’s secret weapon.
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="sidebar-widget">
+    <div class="sidebar-heading">
+     Archives
+    </div>
+    <ul>
+     <li>
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/2018/03/">
+       March 2018
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/2017/01/">
+       January 2017
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/2015/10/">
+       October 2015
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/2015/05/">
+       May 2015
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/2015/02/">
+       February 2015
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/2014/10/">
+       October 2014
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/2014/01/">
+       January 2014
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/2013/11/">
+       November 2013
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/2013/10/">
+       October 2013
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="sidebar-widget">
+    <div class="sidebar-heading">
+     Categories
+    </div>
+    <ul>
+     <li class="cat-item cat-item-6">
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/category/algorithms/">
+       Algorithms
+      </a>
+     </li>
+     <li class="cat-item cat-item-3">
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/category/apm/">
+       APM
+      </a>
+     </li>
+     <li class="cat-item cat-item-8">
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/category/creativity/">
+       creativity
+      </a>
+     </li>
+     <li class="cat-item cat-item-7">
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/category/data-mining/">
+       Data Mining
+      </a>
+     </li>
+     <li class="cat-item cat-item-9">
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/category/lua/">
+       Lua
+      </a>
+     </li>
+     <li class="cat-item cat-item-5">
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/category/networking/">
+       Networking
+      </a>
+     </li>
+     <li class="cat-item cat-item-10">
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/category/optimization/">
+       Optimization
+      </a>
+     </li>
+     <li class="cat-item cat-item-22">
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/category/phone-programming/">
+       Phone Programming
+      </a>
+     </li>
+     <li class="cat-item cat-item-2">
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/category/python/">
+       Python
+      </a>
+     </li>
+     <li class="cat-item cat-item-4">
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/category/scalability/">
+       Scalability
+      </a>
+     </li>
+     <li class="cat-item cat-item-14">
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/category/ssdb/">
+       ssdb
+      </a>
+     </li>
+     <li class="cat-item cat-item-13">
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/category/ssdbhub/">
+       ssdbhub
+      </a>
+     </li>
+     <li class="cat-item cat-item-1">
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/category/uncategorized/">
+       Uncategorized
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="sidebar-widget">
+    <div class="sidebar-heading">
+     Meta
+    </div>
+    <ul>
+     <li>
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/wp-login.php">
+       Log in
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/feed/">
+       Entries
+       <abbr title="Really Simple Syndication">
+        RSS
+       </abbr>
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130133547/http://alexeyvishnevsky.com/comments/feed/">
+       Comments
+       <abbr title="Really Simple Syndication">
+        RSS
+       </abbr>
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130133547/https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">
+       WordPress.org
+      </a>
+     </li>
+    </ul>
+   </div>
+  </div>
+  <div class="clear">
+  </div>
+  <div id="footer">
+   Theme: Simple Style by
+   <a href="http://web.archive.org/web/20201130133547/http://fimply.de/">
+    Fimply
+   </a>
+  </div>
+  <!-- <p class="small"> WassUp 1.9.3 timestamp: 2020-11-30 01:35:47PM UTC (01:35PM)<br />
+If above timestamp is not current time, this page is cached.</p> -->
+  <div style="display:none">
+  </div>
+  <div id="su-footer-links" style="text-align: center;">
+  </div>
+  <!-- mbYTPlayer -->
+  <!-- end mbYTPlayer -->
+  <script type="text/javascript">
+   _stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:4.6',blog:'124545213',post:'4',tz:'0',srv:'alexeyvishnevsky.com'} ]);
+	_stq.push([ 'clickTrackerInit', '124545213', '4' ]);
+  </script>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 13:35:47 Nov 30, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:37:46 Dec 20, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.553
+  exclusion.robots: 0.076
+  exclusion.robots.policy: 0.067
+  esindex: 0.009
+  cdx.remote: 9.897
+  LoadShardBlock: 375.703 (3)
+  PetaboxLoader3.datanode: 297.374 (4)
+  PetaboxLoader3.resolve: 85.33 (2)
+  load_resource: 153.774
+-->

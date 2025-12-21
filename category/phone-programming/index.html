@@ -1,0 +1,3122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"  "http://www.w3.org/TR/html4/strict.dtd">
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+ <!--<![endif]-->
+ <head profile="http://gmpg.org/xfn/11">
+  <script>
+   window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};
+  </script>
+  <!-- End Wayback Rewrite JS Include -->
+  <link href="http://gmpg.org/xfn/11" rel="profile"/>
+  <meta content="text/html;chartset=UTF-8" http-equiv="content-type"/>
+  <link href="http://alexeyvishnevsky.com/xmlrpc.php" rel="pingback"/>
+  <meta charset="utf-8"/>
+  <title>
+   Phone Programming | Alexey Vishnevsky
+  </title>
+  <!-- SEO Ultimate (http://www.seodesignsolutions.com/wordpress-seo/) -->
+  <!-- /SEO Ultimate -->
+  <link href="//web.archive.org/web/20201130144351/http://s0.wp.com/" rel="dns-prefetch"/>
+  <link href="//web.archive.org/web/20201130144351/http://cdn.jquerytools.org/" rel="dns-prefetch"/>
+  <link href="//web.archive.org/web/20201130144351/http://s.w.org/" rel="dns-prefetch"/>
+  <link href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/feed/" rel="alternate" title="Alexey Vishnevsky » Feed" type="application/rss+xml"/>
+  <link href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/comments/feed/" rel="alternate" title="Alexey Vishnevsky » Comments Feed" type="application/rss+xml"/>
+  <link href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/category/phone-programming/feed/" rel="alternate" title="Alexey Vishnevsky » Phone Programming Category Feed" type="application/rss+xml"/>
+  <style type="text/css">
+   img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+  </style>
+  <style id="news-typewriter-inline-css" type="text/css">
+   .pearl-type-wrap {
+                     background-color: #f0f0f0;
+                     border-color: #CCCCCC;
+                     border-style: solid;
+                     border-width: 1px;
+                     padding: 10px;
+                     border-radius: 5px;
+                }
+                
+                .pearl-type-wrap {
+                     font-color: #000000;
+                     font-size: 14px;
+                     letter-spacing: 2px;
+                   
+                }
+  </style>
+  <link href="http://alexeyvishnevsky.com/wp-json/" rel="https://api.w.org/"/>
+  <link href="http://alexeyvishnevsky.com/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+  <link href="http://alexeyvishnevsky.com/wp-includes/wlwmanifest.xml" rel="wlwmanifest" type="application/wlwmanifest+xml"/>
+  <meta content="WordPress 4.7.19" name="generator">
+   <link href="//web.archive.org/web/20201130144351/http://v0.wordpress.com/" rel="dns-prefetch"/>
+   <style type="text/css">
+    img#wpstats{display:none}
+   </style>
+   <style type="text/css">
+    .recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}
+   </style>
+  </meta>
+  <link href="../../css/main.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body class="archive category category-phone-programming category-22">
+  <div id="header">
+   <a class="title" href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/">
+    <div id="title">
+     Alexey Vishnevsky
+    </div>
+   </a>
+   <div id="description">
+    There is always one more bug to fix
+   </div>
+  </div>
+  <div id="nav-container">
+   <div id="nav">
+    <div class="menu">
+     <div class="nav">
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="clear">
+  </div>
+  <div id="container">
+   <div class="post-450 post type-post status-publish format-standard hentry category-algorithms category-phone-programming category-python">
+    <h1>
+     <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/2018/03/reinventing-quick-sort/">
+      Reinventing Quick Sort by improving Stupid Sort.
+     </a>
+    </h1>
+    <div class="date">
+     March 14, 2018
+    </div>
+    <p>
+     Stupid sort is the sort that just randomly shuffles the array until it eventually becomes sorted.
+    </p>
+    <p>
+     In spite of the fact that stupid sort is not so popular in production environment, it may be mentioned as an opening question at programming interview of any level. The discussion about optimizing this kind of search may be very interesting and useful for better understanding some sorting techniques.
+    </p>
+    <p>
+     In a nutshell stupid sort may be written like this:
+    </p>
+    <p>
+     <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/wp-content/uploads/2018/03/Screenshot_2018-03-20-23-40-58_com.quseit.qlua5pro2.png">
+      <img alt="" class="aligncenter wp-image-496" height="711" sizes="(max-width: 400px) 100vw, 400px" src="http://web.archive.org/web/20201130144351im_/http://alexeyvishnevsky.com/wp-content/uploads/2018/03/Screenshot_2018-03-20-23-40-58_com.quseit.qlua5pro2-169x300.png" srcset="http://web.archive.org/web/20201130144351im_/http://alexeyvishnevsky.com/wp-content/uploads/2018/03/Screenshot_2018-03-20-23-40-58_com.quseit.qlua5pro2-169x300.png 169w, http://web.archive.org/web/20201130144351im_/http://alexeyvishnevsky.com/wp-content/uploads/2018/03/Screenshot_2018-03-20-23-40-58_com.quseit.qlua5pro2-576x1024.png 576w, http://web.archive.org/web/20201130144351im_/http://alexeyvishnevsky.com/wp-content/uploads/2018/03/Screenshot_2018-03-20-23-40-58_com.quseit.qlua5pro2.png 720w" width="400"/>
+     </a>
+    </p>
+    <p>
+     The average running time of this algorithm is terribly long. For each permutation (out of n!) we need to verify the order of all the elements in the array (n elements) which gives us O (n*n!). On my Hexa-core Xiaomi Redmi 3 phone this process is very slow even for n=10 ending up with more than 36 million operations. In the worst case, the running time of the algorithm is unbounded, for the same reason that a tossed coin might turn up heads any number of times in a row.
+    </p>
+    <p>
+     The best case occurs if the list as given is already sorted; in this case the expected time complexity is O(
+     <span style="font-family: monospace;">
+      n)
+     </span>
+    </p>
+    <p>
+     For any collection of fixed size, the expected running time of the algorithm is finite for much the same reason that the
+     <a href="http://web.archive.org/web/20201130144351/https://en.m.wikipedia.org/wiki/Infinite_monkey_theorem" title="Infinite monkey theorem">
+      infinite monkey theorem
+     </a>
+     holds: there is non-zero probability of getting  right permutation, so given an unbounded number of tries it will
+     <a href="http://web.archive.org/web/20201130144351/https://en.m.wikipedia.org/wiki/Almost_surely" title="Almost surely">
+      almost surely
+     </a>
+     eventually be chosen.
+    </p>
+    <p>
+     Let us demonstrate the way we can increase the average running time by adding a couple of simple rules. In our example
+     <code>
+      shuffle
+     </code>
+     each time swaps 2 random elements. What if we will not swap those pairs that already placed in a right order (left element smaller than right)? This will immediately save us a lot of swaps and also significantly decrease the running time.
+    </p>
+    <p>
+     Let us write down this “directional shuffle”:
+    </p>
+    <!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+    <div class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" id="crayon-5fc50527084e1110255657" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 18px !important;">
+     <div class="crayon-plain-wrap">
+      <textarea class="crayon-plain print-no" data-settings="dblclick" readonly="" style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 18px !important;" wrap="soft">
+
+def shuffle(arr, l, r):
+    rint = random.randint
+    while l &amp;lt; r:
+        m = rint(l, r)
+        if arr[l] &amp;gt; arr[m]:
+            arr[m], arr[l] = arr[l], arr[m]
+        l += 1
+    return arr
+</textarea>
+     </div>
+     <div class="crayon-main" style="">
+      <table class="crayon-table">
+       <tr class="crayon-row">
+        <td class="crayon-nums" data-settings="show">
+         <div class="crayon-nums-content" style="font-size: 14px !important; line-height: 18px !important;">
+          <div class="crayon-num" data-line="crayon-5fc50527084e1110255657-1">
+           1
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084e1110255657-2">
+           2
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084e1110255657-3">
+           3
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084e1110255657-4">
+           4
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084e1110255657-5">
+           5
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084e1110255657-6">
+           6
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084e1110255657-7">
+           7
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084e1110255657-8">
+           8
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084e1110255657-9">
+           9
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084e1110255657-10">
+           10
+          </div>
+         </div>
+        </td>
+        <td class="crayon-code">
+         <div class="crayon-pre" style="font-size: 14px !important; line-height: 18px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;">
+          <div class="crayon-line" id="crayon-5fc50527084e1110255657-1">
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084e1110255657-2">
+           <span class="crayon-e">
+            def
+           </span>
+           <span class="crayon-e">
+            shuffle
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+           <span class="crayon-o">
+            :
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084e1110255657-3">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            rint
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            =
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            random
+           </span>
+           <span class="crayon-sy">
+            .
+           </span>
+           <span class="crayon-e">
+            randint
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084e1110255657-4">
+           <span class="crayon-e">
+           </span>
+           <span class="crayon-st">
+            while
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            &amp;
+           </span>
+           <span class="crayon-v">
+            lt
+           </span>
+           <span class="crayon-sy">
+            ;
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-o">
+            :
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084e1110255657-5">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            m
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            =
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-e">
+            rint
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084e1110255657-6">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-st">
+            if
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            &amp;
+           </span>
+           <span class="crayon-v">
+            gt
+           </span>
+           <span class="crayon-sy">
+            ;
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            m
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+           <span class="crayon-o">
+            :
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084e1110255657-7">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            m
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            =
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            m
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084e1110255657-8">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            +=
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-cn">
+            1
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084e1110255657-9">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-st">
+            return
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-i">
+            arr
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084e1110255657-10">
+          </div>
+         </div>
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <!-- [Format Time: 0.0025 seconds] -->
+    <p>
+     Now, after adding these new rules, my phone was able to sort 100 elements in less than a second.
+    </p>
+    <p>
+     <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/wp-content/uploads/2018/03/Screenshot_2018-03-13-23-49-09_com.quseit.qlua5pro2.png">
+      <img alt="" class="aligncenter wp-image-465" height="711" sizes="(max-width: 400px) 100vw, 400px" src="http://web.archive.org/web/20201130144351im_/http://alexeyvishnevsky.com/wp-content/uploads/2018/03/Screenshot_2018-03-13-23-49-09_com.quseit.qlua5pro2-169x300.png" srcset="http://web.archive.org/web/20201130144351im_/http://alexeyvishnevsky.com/wp-content/uploads/2018/03/Screenshot_2018-03-13-23-49-09_com.quseit.qlua5pro2-169x300.png 169w, http://web.archive.org/web/20201130144351im_/http://alexeyvishnevsky.com/wp-content/uploads/2018/03/Screenshot_2018-03-13-23-49-09_com.quseit.qlua5pro2-576x1024.png 576w, http://web.archive.org/web/20201130144351im_/http://alexeyvishnevsky.com/wp-content/uploads/2018/03/Screenshot_2018-03-13-23-49-09_com.quseit.qlua5pro2.png 720w" width="400"/>
+     </a>
+    </p>
+    <p>
+     Although the running time has decreased, it still increases very fast, when the number of elements in the array adds up. For example, to sort 1000 elements takes about 100 seconds. We increased the array size by x10 and got the x1000 slow down. This allows us to estimate our algorithm by O(n^3). It turns out that if we only could split our 1000 elements array to 10 sub-arrays by 100 elements and then sort each other separately, this would take us less than 10*(1 sec) = 10 seconds (instead of 1000). The only thing we should figure out is how to split the array in such way that the merge back would be trivial. Apparently we can change our shuffling function a little bit so that after shuffling the value of elements in the left part of the array will be smaller than those of the elements in the right part. Shuffling written in this way may be called many times on the same part of the array until it eventually becomes sorted (stupid-sort technique). Then, after all parts of the array are sorted, the entire array becomes sorted (trivially).
+    </p>
+    <p>
+     Let us modify our “shuffle” to swap elements with respect to some randomly chosen element of the array (pivot):
+    </p>
+    <!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+    <div class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" id="crayon-5fc50527084ea750835742" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 18px !important;">
+     <div class="crayon-plain-wrap">
+      <textarea class="crayon-plain print-no" data-settings="dblclick" readonly="" style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 18px !important;" wrap="soft">
+
+def shuffle(arr, l, r):
+    m = l
+
+    # chose pivot randomly and place as last element
+    p = random.randint(l, r)
+    arr[p], arr[r] = arr[r], arr[p]
+
+    # swap elements arr[l], arr[m] according to pivot arr[r]
+    while l &amp;lt; r:
+        if arr[l] &amp;lt; arr[r]:
+            arr[l], arr[m] = arr[m], arr[l]
+            m += 1
+        l += 1
+
+    # place pivot between 2 partitions
+    arr[m], arr[r] = arr[r], arr[m]
+    return m
+</textarea>
+     </div>
+     <div class="crayon-main" style="">
+      <table class="crayon-table">
+       <tr class="crayon-row">
+        <td class="crayon-nums" data-settings="show">
+         <div class="crayon-nums-content" style="font-size: 14px !important; line-height: 18px !important;">
+          <div class="crayon-num" data-line="crayon-5fc50527084ea750835742-1">
+           1
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084ea750835742-2">
+           2
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084ea750835742-3">
+           3
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084ea750835742-4">
+           4
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084ea750835742-5">
+           5
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084ea750835742-6">
+           6
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084ea750835742-7">
+           7
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084ea750835742-8">
+           8
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084ea750835742-9">
+           9
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084ea750835742-10">
+           10
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084ea750835742-11">
+           11
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084ea750835742-12">
+           12
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084ea750835742-13">
+           13
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084ea750835742-14">
+           14
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084ea750835742-15">
+           15
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084ea750835742-16">
+           16
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084ea750835742-17">
+           17
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084ea750835742-18">
+           18
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084ea750835742-19">
+           19
+          </div>
+         </div>
+        </td>
+        <td class="crayon-code">
+         <div class="crayon-pre" style="font-size: 14px !important; line-height: 18px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;">
+          <div class="crayon-line" id="crayon-5fc50527084ea750835742-1">
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084ea750835742-2">
+           <span class="crayon-e">
+            def
+           </span>
+           <span class="crayon-e">
+            shuffle
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+           <span class="crayon-o">
+            :
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084ea750835742-3">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            m
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            =
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084ea750835742-4">
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084ea750835742-5">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-p">
+            # chose pivot randomly and place as last element
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084ea750835742-6">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            p
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            =
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            random
+           </span>
+           <span class="crayon-sy">
+            .
+           </span>
+           <span class="crayon-e">
+            randint
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084ea750835742-7">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            p
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            =
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            p
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084ea750835742-8">
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084ea750835742-9">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-p">
+            # swap elements arr[l], arr[m] according to pivot arr[r]
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084ea750835742-10">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-st">
+            while
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            &amp;
+           </span>
+           <span class="crayon-v">
+            lt
+           </span>
+           <span class="crayon-sy">
+            ;
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-o">
+            :
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084ea750835742-11">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-st">
+            if
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            &amp;
+           </span>
+           <span class="crayon-v">
+            lt
+           </span>
+           <span class="crayon-sy">
+            ;
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+           <span class="crayon-o">
+            :
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084ea750835742-12">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            m
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            =
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            m
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084ea750835742-13">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            m
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            +=
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-cn">
+            1
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084ea750835742-14">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            +=
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-cn">
+            1
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084ea750835742-15">
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084ea750835742-16">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-p">
+            # place pivot between 2 partitions
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084ea750835742-17">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            m
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            =
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            m
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084ea750835742-18">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-st">
+            return
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-i">
+            m
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084ea750835742-19">
+          </div>
+         </div>
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <!-- [Format Time: 0.0043 seconds] -->
+    <p>
+     The result of one run of this function is that original array was divided into 2 parts: left and right, separated by pivot. Each element on the left is smaller than pivot, and each element on the right is greater or equal than the pivot. Please notice that the function has O (n) time complexity and works in-place.
+    </p>
+    <p>
+     Now our stupid_sort can be written as follows:
+    </p>
+    <!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+    <div class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" id="crayon-5fc50527084f0580908402" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 18px !important;">
+     <div class="crayon-plain-wrap">
+      <textarea class="crayon-plain print-no" data-settings="dblclick" readonly="" style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 18px !important;" wrap="soft">
+
+def stupid_sort(arr):
+    r = len(arr) - 1
+    while not is_sorted(arr):
+        p = shuffle(arr, 0, r)
+        p1 = shuffle(arr, 0, p)
+        p2 = shuffle(arr, p, r)
+        p3 = shuffle(arr, 0, p1)
+        p4 = shuffle(arr, p1, p)
+        p5 = shuffle(arr, p, p2)
+        p6 = shuffle(arr, p2, r)
+        # etc..
+</textarea>
+     </div>
+     <div class="crayon-main" style="">
+      <table class="crayon-table">
+       <tr class="crayon-row">
+        <td class="crayon-nums" data-settings="show">
+         <div class="crayon-nums-content" style="font-size: 14px !important; line-height: 18px !important;">
+          <div class="crayon-num" data-line="crayon-5fc50527084f0580908402-1">
+           1
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f0580908402-2">
+           2
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f0580908402-3">
+           3
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f0580908402-4">
+           4
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f0580908402-5">
+           5
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f0580908402-6">
+           6
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f0580908402-7">
+           7
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f0580908402-8">
+           8
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f0580908402-9">
+           9
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f0580908402-10">
+           10
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f0580908402-11">
+           11
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f0580908402-12">
+           12
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f0580908402-13">
+           13
+          </div>
+         </div>
+        </td>
+        <td class="crayon-code">
+         <div class="crayon-pre" style="font-size: 14px !important; line-height: 18px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;">
+          <div class="crayon-line" id="crayon-5fc50527084f0580908402-1">
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f0580908402-2">
+           <span class="crayon-r">
+            def
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-e">
+            stupid_sort
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+           <span class="crayon-o">
+            :
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f0580908402-3">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            =
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-k">
+            len
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            -
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-cn">
+            1
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f0580908402-4">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-st">
+            while
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-st">
+            not
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-e">
+            is_sorted
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+           <span class="crayon-o">
+            :
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f0580908402-5">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            p
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            =
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-e">
+            shuffle
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-cn">
+            0
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f0580908402-6">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            p1
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            =
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-e">
+            shuffle
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-cn">
+            0
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            p
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f0580908402-7">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            p2
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            =
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-e">
+            shuffle
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            p
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f0580908402-8">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            p3
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            =
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-e">
+            shuffle
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-cn">
+            0
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            p1
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f0580908402-9">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            p4
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            =
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-e">
+            shuffle
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            p1
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            p
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f0580908402-10">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            p5
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            =
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-e">
+            shuffle
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            p
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            p2
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f0580908402-11">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            p6
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            =
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-e">
+            shuffle
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            p2
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f0580908402-12">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-c">
+            # etc..
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f0580908402-13">
+          </div>
+         </div>
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <!-- [Format Time: 0.0048 seconds] -->
+    <p>
+     We can actually achieve the same functionality, using a recursion:
+    </p>
+    <!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+    <div class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" id="crayon-5fc50527084f4296289601" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 18px !important;">
+     <div class="crayon-plain-wrap">
+      <textarea class="crayon-plain print-no" data-settings="dblclick" readonly="" style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 18px !important;" wrap="soft">
+
+def stupid_sort(arr, l, r):
+    if l &gt;= r:
+        return
+    p = partition(arr, l, r)
+    stupid_sort(arr, l, p)
+    stupid_sort(arr, p + 1, r)
+</textarea>
+     </div>
+     <div class="crayon-main" style="">
+      <table class="crayon-table">
+       <tr class="crayon-row">
+        <td class="crayon-nums" data-settings="show">
+         <div class="crayon-nums-content" style="font-size: 14px !important; line-height: 18px !important;">
+          <div class="crayon-num" data-line="crayon-5fc50527084f4296289601-1">
+           1
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f4296289601-2">
+           2
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f4296289601-3">
+           3
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f4296289601-4">
+           4
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f4296289601-5">
+           5
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f4296289601-6">
+           6
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f4296289601-7">
+           7
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f4296289601-8">
+           8
+          </div>
+         </div>
+        </td>
+        <td class="crayon-code">
+         <div class="crayon-pre" style="font-size: 14px !important; line-height: 18px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;">
+          <div class="crayon-line" id="crayon-5fc50527084f4296289601-1">
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f4296289601-2">
+           <span class="crayon-e">
+            def
+           </span>
+           <span class="crayon-e">
+            stupid_sort
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+           <span class="crayon-o">
+            :
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f4296289601-3">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-st">
+            if
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            &gt;=
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-o">
+            :
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f4296289601-4">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-st">
+            return
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f4296289601-5">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            p
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            =
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-e">
+            partition
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f4296289601-6">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-e">
+            stupid_sort
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            p
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f4296289601-7">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-e">
+            stupid_sort
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            p
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            +
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-cn">
+            1
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f4296289601-8">
+          </div>
+         </div>
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <!-- [Format Time: 0.0014 seconds] -->
+    <p>
+     Pay attention, that is_sorted(arr) call replaced with if l &gt;= r: since once the size of partitions is 2 the partitions become sorted. Then the original array which consists of sorted partitions becomes also sorted.
+    </p>
+    <p>
+     Here is the full code resuming all the above:
+    </p>
+    <!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+    <div class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" id="crayon-5fc50527084f8820111361" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 18px !important;">
+     <div class="crayon-plain-wrap">
+      <textarea class="crayon-plain print-no" data-settings="dblclick" readonly="" style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 18px !important;" wrap="soft">
+
+import time
+import random
+
+
+def shuffle(arr, l, r):
+    m = l
+    p = random.randint(l, r)
+    arr[p], arr[r] = arr[r], arr[p]
+
+    while l &lt; r:
+        if arr[l] &lt; arr[r]:
+            arr[l], arr[m] = arr[m], arr[l]
+            m += 1
+        l += 1
+
+    arr[m], arr[r] = arr[r], arr[m]
+    return m
+
+
+def stupid_sort(arr, l, r):
+    if l &gt;= r:
+        return
+    p = shuffle(arr, l, r)
+    stupid_sort(arr, l, p)
+    stupid_sort(arr, p + 1, r)
+
+
+n = 100000
+arr = [random.randint(1, n) for i in range(n)]
+st = time.time()
+stupid_sort(arr, 0, len(arr) - 1)
+print time.time() - st
+print arr
+</textarea>
+     </div>
+     <div class="crayon-main" style="">
+      <table class="crayon-table">
+       <tr class="crayon-row">
+        <td class="crayon-nums" data-settings="show">
+         <div class="crayon-nums-content" style="font-size: 14px !important; line-height: 18px !important;">
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-1">
+           1
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-2">
+           2
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-3">
+           3
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-4">
+           4
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-5">
+           5
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-6">
+           6
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-7">
+           7
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-8">
+           8
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-9">
+           9
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-10">
+           10
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-11">
+           11
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-12">
+           12
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-13">
+           13
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-14">
+           14
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-15">
+           15
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-16">
+           16
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-17">
+           17
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-18">
+           18
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-19">
+           19
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-20">
+           20
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-21">
+           21
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-22">
+           22
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-23">
+           23
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-24">
+           24
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-25">
+           25
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-26">
+           26
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-27">
+           27
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-28">
+           28
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-29">
+           29
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-30">
+           30
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-31">
+           31
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-32">
+           32
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-33">
+           33
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-34">
+           34
+          </div>
+          <div class="crayon-num" data-line="crayon-5fc50527084f8820111361-35">
+           35
+          </div>
+         </div>
+        </td>
+        <td class="crayon-code">
+         <div class="crayon-pre" style="font-size: 14px !important; line-height: 18px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;">
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-1">
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-2">
+           <span class="crayon-r">
+            import
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-k">
+            time
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-3">
+           <span class="crayon-r">
+            import
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-k">
+            random
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-4">
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-5">
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-6">
+           <span class="crayon-r">
+            def
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-e">
+            shuffle
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+           <span class="crayon-o">
+            :
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-7">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            m
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            =
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-i">
+            l
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-8">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            p
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            =
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-k">
+            random
+           </span>
+           <span class="crayon-sy">
+            .
+           </span>
+           <span class="crayon-e">
+            randint
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-9">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            p
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            =
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            p
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-10">
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-11">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-st">
+            while
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            &lt;
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-o">
+            :
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-12">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-st">
+            if
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            &lt;
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+           <span class="crayon-o">
+            :
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-13">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            m
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            =
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            m
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-14">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            m
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            +=
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-cn">
+            1
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-15">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            +=
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-cn">
+            1
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-16">
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-17">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            m
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            =
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-v">
+            m
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-18">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-st">
+            return
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-i">
+            m
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-19">
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-20">
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-21">
+           <span class="crayon-r">
+            def
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-e">
+            stupid_sort
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+           <span class="crayon-o">
+            :
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-22">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-st">
+            if
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            &gt;=
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-o">
+            :
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-23">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-st">
+            return
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-24">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            p
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            =
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-e">
+            shuffle
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-25">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-e">
+            stupid_sort
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            l
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            p
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-26">
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-e">
+            stupid_sort
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            p
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            +
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-cn">
+            1
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            r
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-27">
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-28">
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-29">
+           <span class="crayon-v">
+            n
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            =
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-cn">
+            100000
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-30">
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            =
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-sy">
+            [
+           </span>
+           <span class="crayon-k">
+            random
+           </span>
+           <span class="crayon-sy">
+            .
+           </span>
+           <span class="crayon-e">
+            randint
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-cn">
+            1
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-v">
+            n
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-st">
+            for
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-i">
+            i
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-st">
+            in
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-k">
+            range
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-v">
+            n
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+           <span class="crayon-sy">
+            ]
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-31">
+           <span class="crayon-v">
+            st
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            =
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-k">
+            time
+           </span>
+           <span class="crayon-sy">
+            .
+           </span>
+           <span class="crayon-k">
+            time
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-32">
+           <span class="crayon-e">
+            stupid_sort
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-cn">
+            0
+           </span>
+           <span class="crayon-sy">
+            ,
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-k">
+            len
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-v">
+            arr
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            -
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-cn">
+            1
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-33">
+           <span class="crayon-k">
+            print
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-k">
+            time
+           </span>
+           <span class="crayon-sy">
+            .
+           </span>
+           <span class="crayon-k">
+            time
+           </span>
+           <span class="crayon-sy">
+            (
+           </span>
+           <span class="crayon-sy">
+            )
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-o">
+            -
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-e">
+            st
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-34">
+           <span class="crayon-k">
+            print
+           </span>
+           <span class="crayon-h">
+           </span>
+           <span class="crayon-i">
+            arr
+           </span>
+          </div>
+          <div class="crayon-line" id="crayon-5fc50527084f8820111361-35">
+          </div>
+         </div>
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <!-- [Format Time: 0.0086 seconds] -->
+    <p>
+     Written in such way, shuffling function has a special name – partitioning and the algorithm called Quick Sort. Its complexity is bound by number of
+    </p>
+    <p>
+     partitions, multiplied by complexity of shuffling each partition which is
+     <code>
+      log(n)
+      <br/>
+      * n
+     </code>
+     <br/>
+     Thus, we have just demonstrated how by means of gradually improving the
+     <br/>
+     most basic and simple function, our stupid sort has been transformed into
+     <br/>
+     one of the most efficient sorting algorithms known today.
+    </p>
+    <div class="addtoany_share_save_container addtoany_content addtoany_content_bottom">
+     <div class="a2a_kit a2a_kit_size_32 addtoany_list" data-a2a-title="Reinventing Quick Sort by improving Stupid Sort." data-a2a-url="http://alexeyvishnevsky.com/2018/03/reinventing-quick-sort/">
+      <a class="a2a_button_facebook" href="http://web.archive.org/web/20201130144351/https://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Falexeyvishnevsky.com%2F2018%2F03%2Freinventing-quick-sort%2F&amp;linkname=Reinventing%20Quick%20Sort%20by%20improving%20Stupid%20Sort." rel="nofollow noopener" target="_blank" title="Facebook">
+      </a>
+      <a class="a2a_button_twitter" href="http://web.archive.org/web/20201130144351/https://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Falexeyvishnevsky.com%2F2018%2F03%2Freinventing-quick-sort%2F&amp;linkname=Reinventing%20Quick%20Sort%20by%20improving%20Stupid%20Sort." rel="nofollow noopener" target="_blank" title="Twitter">
+      </a>
+      <a class="a2a_button_google_plus" href="http://web.archive.org/web/20201130144351/https://www.addtoany.com/add_to/google_plus?linkurl=http%3A%2F%2Falexeyvishnevsky.com%2F2018%2F03%2Freinventing-quick-sort%2F&amp;linkname=Reinventing%20Quick%20Sort%20by%20improving%20Stupid%20Sort." rel="nofollow noopener" target="_blank" title="Google+">
+      </a>
+      <a class="a2a_button_pinterest" href="http://web.archive.org/web/20201130144351/https://www.addtoany.com/add_to/pinterest?linkurl=http%3A%2F%2Falexeyvishnevsky.com%2F2018%2F03%2Freinventing-quick-sort%2F&amp;linkname=Reinventing%20Quick%20Sort%20by%20improving%20Stupid%20Sort." rel="nofollow noopener" target="_blank" title="Pinterest">
+      </a>
+      <a class="a2a_button_reddit" href="http://web.archive.org/web/20201130144351/https://www.addtoany.com/add_to/reddit?linkurl=http%3A%2F%2Falexeyvishnevsky.com%2F2018%2F03%2Freinventing-quick-sort%2F&amp;linkname=Reinventing%20Quick%20Sort%20by%20improving%20Stupid%20Sort." rel="nofollow noopener" target="_blank" title="Reddit">
+      </a>
+      <a class="a2a_button_hacker_news" href="http://web.archive.org/web/20201130144351/https://www.addtoany.com/add_to/hacker_news?linkurl=http%3A%2F%2Falexeyvishnevsky.com%2F2018%2F03%2Freinventing-quick-sort%2F&amp;linkname=Reinventing%20Quick%20Sort%20by%20improving%20Stupid%20Sort." rel="nofollow noopener" target="_blank" title="Hacker News">
+      </a>
+      <a class="a2a_dd addtoany_share_save addtoany_share" href="http://web.archive.org/web/20201130144351/https://www.addtoany.com/share">
+      </a>
+     </div>
+    </div>
+    <div class="clear">
+    </div>
+    <p>
+     <div class="tags">
+     </div>
+    </p>
+   </div>
+   <div id="border-bottom">
+   </div>
+   <div id="buttons">
+   </div>
+  </div>
+  <div class="clear">
+  </div>
+  <div id="sidebar">
+   <div id="sidebar-widget">
+    <form action="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/" id="searchform" method="get">
+     <input class="search-sidebar" id="s" name="s" onblur="if (this.value=='') this.value='Search ...'" onfocus="if (this.value=='Search ...') this.value='';" value="Search ..."/>
+    </form>
+   </div>
+   <div id="sidebar-widget">
+    <div class="sidebar-heading">
+     Recent Posts
+    </div>
+    <ul>
+     <li>
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/2018/03/reinventing-quick-sort/">
+       Reinventing Quick Sort by improving Stupid Sort.
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/2017/01/ssdb-redis/">
+       SSDB as a cheaper alternative to Redis
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/2015/10/chess-com-conquered/">
+       Mission Impossible! Or how to beat a chess computer at impossible level.
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/2015/05/lua-wraped-python/">
+       Lua as a Python’s secret weapon.
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/2015/02/yahoochessmaster-r-i-p/">
+       Yahoo ChessMaster R.I.P
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="sidebar-widget">
+    <div class="sidebar-heading">
+     Recent Comments
+    </div>
+    <ul id="recentcomments">
+     <li class="recentcomments">
+      <span class="comment-author-link">
+       Massimo
+      </span>
+      on
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/2015/05/lua-wraped-python/#comment-742">
+       Lua as a Python’s secret weapon.
+      </a>
+     </li>
+     <li class="recentcomments">
+      <span class="comment-author-link">
+       Italo Maia
+      </span>
+      on
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/2015/05/lua-wraped-python/#comment-739">
+       Lua as a Python’s secret weapon.
+      </a>
+     </li>
+     <li class="recentcomments">
+      <span class="comment-author-link">
+       <a class="url" href="http://web.archive.org/web/20201130144351/https://www.physicsforums.com/threads/comparison-of-high-level-computer-programming-languages.912188/page-3#post-6041230" rel="external nofollow">
+        Comparison of high-level computer programming languages | Page 3 | Physics Forums
+       </a>
+      </span>
+      on
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/2015/05/lua-wraped-python/#comment-721">
+       Lua as a Python’s secret weapon.
+      </a>
+     </li>
+     <li class="recentcomments">
+      <span class="comment-author-link">
+       <a class="url" href="http://web.archive.org/web/20201130144351/https://www.physicsforums.com/threads/is-assembly-language-still-being-used.942471/#post-5963048" rel="external nofollow">
+        Is assembly language still being used? | Physics Forums - The Fusion of Science and Community
+       </a>
+      </span>
+      on
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/2015/05/lua-wraped-python/#comment-670">
+       Lua as a Python’s secret weapon.
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="sidebar-widget">
+    <div class="sidebar-heading">
+     Archives
+    </div>
+    <ul>
+     <li>
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/2018/03/">
+       March 2018
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/2017/01/">
+       January 2017
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/2015/10/">
+       October 2015
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/2015/05/">
+       May 2015
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/2015/02/">
+       February 2015
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/2014/10/">
+       October 2014
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/2014/01/">
+       January 2014
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/2013/11/">
+       November 2013
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/2013/10/">
+       October 2013
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="sidebar-widget">
+    <div class="sidebar-heading">
+     Categories
+    </div>
+    <ul>
+     <li class="cat-item cat-item-6">
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/category/algorithms/">
+       Algorithms
+      </a>
+     </li>
+     <li class="cat-item cat-item-3">
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/category/apm/">
+       APM
+      </a>
+     </li>
+     <li class="cat-item cat-item-8">
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/category/creativity/">
+       creativity
+      </a>
+     </li>
+     <li class="cat-item cat-item-7">
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/category/data-mining/">
+       Data Mining
+      </a>
+     </li>
+     <li class="cat-item cat-item-9">
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/category/lua/">
+       Lua
+      </a>
+     </li>
+     <li class="cat-item cat-item-5">
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/category/networking/">
+       Networking
+      </a>
+     </li>
+     <li class="cat-item cat-item-10">
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/category/optimization/">
+       Optimization
+      </a>
+     </li>
+     <li class="cat-item cat-item-22 current-cat">
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/category/phone-programming/">
+       Phone Programming
+      </a>
+     </li>
+     <li class="cat-item cat-item-2">
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/category/python/">
+       Python
+      </a>
+     </li>
+     <li class="cat-item cat-item-4">
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/category/scalability/">
+       Scalability
+      </a>
+     </li>
+     <li class="cat-item cat-item-14">
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/category/ssdb/">
+       ssdb
+      </a>
+     </li>
+     <li class="cat-item cat-item-13">
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/category/ssdbhub/">
+       ssdbhub
+      </a>
+     </li>
+     <li class="cat-item cat-item-1">
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/category/uncategorized/">
+       Uncategorized
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="sidebar-widget">
+    <div class="sidebar-heading">
+     Meta
+    </div>
+    <ul>
+     <li>
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/wp-login.php">
+       Log in
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/feed/">
+       Entries
+       <abbr title="Really Simple Syndication">
+        RSS
+       </abbr>
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130144351/http://alexeyvishnevsky.com/comments/feed/">
+       Comments
+       <abbr title="Really Simple Syndication">
+        RSS
+       </abbr>
+      </a>
+     </li>
+     <li>
+      <a href="http://web.archive.org/web/20201130144351/https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">
+       WordPress.org
+      </a>
+     </li>
+    </ul>
+   </div>
+  </div>
+  <div class="clear">
+  </div>
+  <div id="footer">
+   Theme: Simple Style by
+   <a href="http://web.archive.org/web/20201130144351/http://fimply.de/">
+    Fimply
+   </a>
+  </div>
+  <!-- <p class="small"> WassUp 1.9.3 timestamp: 2020-11-30 02:43:51PM UTC (02:43PM)<br />
+If above timestamp is not current time, this page is cached.</p> -->
+  <div style="display:none">
+  </div>
+  <div id="su-footer-links" style="text-align: center;">
+  </div>
+  <!-- mbYTPlayer -->
+  <!-- end mbYTPlayer -->
+  <script type="text/javascript">
+   _stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:4.6',blog:'124545213',post:'0',tz:'0',srv:'alexeyvishnevsky.com'} ]);
+	_stq.push([ 'clickTrackerInit', '124545213', '0' ]);
+  </script>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 14:43:51 Nov 30, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:53:17 Dec 20, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.514
+  exclusion.robots: 0.049
+  exclusion.robots.policy: 0.039
+  esindex: 0.008
+  cdx.remote: 58.795
+  LoadShardBlock: 249.628 (3)
+  PetaboxLoader3.datanode: 260.447 (4)
+  PetaboxLoader3.resolve: 99.437 (2)
+  load_resource: 234.312
+-->
