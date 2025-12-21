@@ -1,0 +1,20 @@
+# Blog URLs to Restore
+# Add one URL per line (remove # to uncomment)
+
+# Homepage
+https://alexeyvishnevsky.com/
+
+# About page
+# https://alexeyvishnevsky.com/about
+
+# Blog posts (add your actual post URLs)
+# https://alexeyvishnevsky.com/posts/post-title-1
+# https://alexeyvishnevsky.com/posts/post-title-2
+# https://alexeyvishnevsky.com/posts/post-title-3
+
+# Archive/Category pages
+# https://alexeyvishnevsky.com/archive
+# https://alexeyvishnevsky.com/categories/tech
+
+# Contact page
+# https://alexeyvishnevsky.com/contact
