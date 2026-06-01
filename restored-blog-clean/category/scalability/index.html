@@ -446,467 +446,68 @@ class BLOOMDupeFilter(BaseDupeFilter):
           <div class="crayon-line" id="crayon-5fc4fda0306cd563128641-1">
           </div>
           <div class="crayon-line" id="crayon-5fc4fda0306cd563128641-2">
-           <span class="crayon-st">
-            from
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-e">
-            pybloom
-           </span>
-           <span class="crayon-r">
-            import
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-e">
-            BloomFilter
-           </span>
+           <span class="crayon-st">from</span><span class="crayon-h"></span><span class="crayon-e">pybloom</span><span class="crayon-r">import</span><span class="crayon-h"></span><span class="crayon-e">BloomFilter</span>
           </div>
           <div class="crayon-line" id="crayon-5fc4fda0306cd563128641-3">
-           <span class="crayon-st">
-            from
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-v">
-            scrapy
-           </span>
-           <span class="crayon-sy">
-            .
-           </span>
-           <span class="crayon-v">
-            utils
-           </span>
-           <span class="crayon-sy">
-            .
-           </span>
-           <span class="crayon-e">
-            job
-           </span>
-           <span class="crayon-r">
-            import
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-e">
-            job_dir
-           </span>
+           <span class="crayon-st">from</span><span class="crayon-h"></span><span class="crayon-v">scrapy</span><span class="crayon-sy">.</span><span class="crayon-v">utils</span><span class="crayon-sy">.</span><span class="crayon-e">job</span><span class="crayon-r">import</span><span class="crayon-h"></span><span class="crayon-e">job_dir</span>
           </div>
           <div class="crayon-line" id="crayon-5fc4fda0306cd563128641-4">
-           <span class="crayon-st">
-            from
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-v">
-            scrapy
-           </span>
-           <span class="crayon-sy">
-            .
-           </span>
-           <span class="crayon-e">
-            dupefilter
-           </span>
-           <span class="crayon-r">
-            import
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-e">
-            BaseDupeFilter
-           </span>
+           <span class="crayon-st">from</span><span class="crayon-h"></span><span class="crayon-v">scrapy</span><span class="crayon-sy">.</span><span class="crayon-e">dupefilter</span><span class="crayon-r">import</span><span class="crayon-h"></span><span class="crayon-e">BaseDupeFilter</span>
           </div>
           <div class="crayon-line" id="crayon-5fc4fda0306cd563128641-5">
           </div>
           <div class="crayon-line" id="crayon-5fc4fda0306cd563128641-6">
-           <span class="crayon-t">
-            class
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-e">
-            BLOOMDupeFilter
-           </span>
-           <span class="crayon-sy">
-            (
-           </span>
-           <span class="crayon-v">
-            BaseDupeFilter
-           </span>
-           <span class="crayon-sy">
-            )
-           </span>
-           <span class="crayon-o">
-            :
-           </span>
+           <span class="crayon-t">class</span><span class="crayon-h"></span><span class="crayon-e">BLOOMDupeFilter</span><span class="crayon-sy">(</span><span class="crayon-v">BaseDupeFilter</span><span class="crayon-sy">)</span><span class="crayon-o">:</span>
           </div>
           <div class="crayon-line" id="crayon-5fc4fda0306cd563128641-7">
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-s">
-            """Request Fingerprint duplicates filter"""
-           </span>
+           <span class="crayon-h"></span><span class="crayon-s">"""Request Fingerprint duplicates filter"""</span>
           </div>
           <div class="crayon-line" id="crayon-5fc4fda0306cd563128641-8">
           </div>
           <div class="crayon-line" id="crayon-5fc4fda0306cd563128641-9">
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-r">
-            def
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-e">
-            __init__
-           </span>
-           <span class="crayon-sy">
-            (
-           </span>
-           <span class="crayon-r">
-            self
-           </span>
-           <span class="crayon-sy">
-            ,
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-v">
-            path
-           </span>
-           <span class="crayon-o">
-            =
-           </span>
-           <span class="crayon-t">
-            None
-           </span>
-           <span class="crayon-sy">
-            )
-           </span>
-           <span class="crayon-o">
-            :
-           </span>
+           <span class="crayon-h"></span><span class="crayon-r">def</span><span class="crayon-h"></span><span class="crayon-e">__init__</span><span class="crayon-sy">(</span><span class="crayon-r">self</span><span class="crayon-sy">,</span><span class="crayon-h"></span><span class="crayon-v">path</span><span class="crayon-o">=</span><span class="crayon-t">None</span><span class="crayon-sy">)</span><span class="crayon-o">:</span>
           </div>
           <div class="crayon-line" id="crayon-5fc4fda0306cd563128641-10">
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-r">
-            self
-           </span>
-           <span class="crayon-sy">
-            .
-           </span>
-           <span class="crayon-k">
-            file
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-o">
-            =
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-t">
-            None
-           </span>
+           <span class="crayon-h"></span><span class="crayon-r">self</span><span class="crayon-sy">.</span><span class="crayon-k">file</span><span class="crayon-h"></span><span class="crayon-o">=</span><span class="crayon-h"></span><span class="crayon-t">None</span>
           </div>
           <div class="crayon-line" id="crayon-5fc4fda0306cd563128641-11">
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-r">
-            self
-           </span>
-           <span class="crayon-sy">
-            .
-           </span>
-           <span class="crayon-v">
-            fingerprints
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-o">
-            =
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-e">
-            BloomFilter
-           </span>
-           <span class="crayon-sy">
-            (
-           </span>
-           <span class="crayon-cn">
-            2000000
-           </span>
-           <span class="crayon-sy">
-            ,
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-cn">
-            0.00001
-           </span>
-           <span class="crayon-sy">
-            )
-           </span>
+           <span class="crayon-h"></span><span class="crayon-r">self</span><span class="crayon-sy">.</span><span class="crayon-v">fingerprints</span><span class="crayon-h"></span><span class="crayon-o">=</span><span class="crayon-h"></span><span class="crayon-e">BloomFilter</span><span class="crayon-sy">(</span><span class="crayon-cn">2000000</span><span class="crayon-sy">,</span><span class="crayon-h"></span><span class="crayon-cn">0.00001</span><span class="crayon-sy">)</span>
           </div>
           <div class="crayon-line" id="crayon-5fc4fda0306cd563128641-12">
           </div>
           <div class="crayon-line" id="crayon-5fc4fda0306cd563128641-13">
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-sy">
-            @
-           </span>
-           <span class="crayon-k">
-            classmethod
-           </span>
+           <span class="crayon-h"></span><span class="crayon-sy">@</span><span class="crayon-k">classmethod</span>
           </div>
           <div class="crayon-line" id="crayon-5fc4fda0306cd563128641-14">
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-r">
-            def
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-e">
-            from_settings
-           </span>
-           <span class="crayon-sy">
-            (
-           </span>
-           <span class="crayon-v">
-            cls
-           </span>
-           <span class="crayon-sy">
-            ,
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-v">
-            settings
-           </span>
-           <span class="crayon-sy">
-            )
-           </span>
-           <span class="crayon-o">
-            :
-           </span>
+           <span class="crayon-h"></span><span class="crayon-r">def</span><span class="crayon-h"></span><span class="crayon-e">from_settings</span><span class="crayon-sy">(</span><span class="crayon-v">cls</span><span class="crayon-sy">,</span><span class="crayon-h"></span><span class="crayon-v">settings</span><span class="crayon-sy">)</span><span class="crayon-o">:</span>
           </div>
           <div class="crayon-line" id="crayon-5fc4fda0306cd563128641-15">
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-st">
-            return
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-e">
-            cls
-           </span>
-           <span class="crayon-sy">
-            (
-           </span>
-           <span class="crayon-e">
-            job_dir
-           </span>
-           <span class="crayon-sy">
-            (
-           </span>
-           <span class="crayon-v">
-            settings
-           </span>
-           <span class="crayon-sy">
-            )
-           </span>
-           <span class="crayon-sy">
-            )
-           </span>
+           <span class="crayon-h"></span><span class="crayon-st">return</span><span class="crayon-h"></span><span class="crayon-e">cls</span><span class="crayon-sy">(</span><span class="crayon-e">job_dir</span><span class="crayon-sy">(</span><span class="crayon-v">settings</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span>
           </div>
           <div class="crayon-line" id="crayon-5fc4fda0306cd563128641-16">
           </div>
           <div class="crayon-line" id="crayon-5fc4fda0306cd563128641-17">
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-r">
-            def
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-e">
-            request_seen
-           </span>
-           <span class="crayon-sy">
-            (
-           </span>
-           <span class="crayon-r">
-            self
-           </span>
-           <span class="crayon-sy">
-            ,
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-v">
-            request
-           </span>
-           <span class="crayon-sy">
-            )
-           </span>
-           <span class="crayon-o">
-            :
-           </span>
+           <span class="crayon-h"></span><span class="crayon-r">def</span><span class="crayon-h"></span><span class="crayon-e">request_seen</span><span class="crayon-sy">(</span><span class="crayon-r">self</span><span class="crayon-sy">,</span><span class="crayon-h"></span><span class="crayon-v">request</span><span class="crayon-sy">)</span><span class="crayon-o">:</span>
           </div>
           <div class="crayon-line" id="crayon-5fc4fda0306cd563128641-18">
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-v">
-            fp
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-o">
-            =
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-v">
-            request
-           </span>
-           <span class="crayon-sy">
-            .
-           </span>
-           <span class="crayon-e">
-            url
-           </span>
+           <span class="crayon-h"></span><span class="crayon-v">fp</span><span class="crayon-h"></span><span class="crayon-o">=</span><span class="crayon-h"></span><span class="crayon-v">request</span><span class="crayon-sy">.</span><span class="crayon-e">url</span>
           </div>
           <div class="crayon-line" id="crayon-5fc4fda0306cd563128641-19">
-           <span class="crayon-e">
-           </span>
-           <span class="crayon-st">
-            if
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-e">
-            fp
-           </span>
-           <span class="crayon-st">
-            in
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-r">
-            self
-           </span>
-           <span class="crayon-sy">
-            .
-           </span>
-           <span class="crayon-v">
-            fingerprints
-           </span>
-           <span class="crayon-o">
-            :
-           </span>
+           <span class="crayon-e"></span><span class="crayon-st">if</span><span class="crayon-h"></span><span class="crayon-e">fp</span><span class="crayon-st">in</span><span class="crayon-h"></span><span class="crayon-r">self</span><span class="crayon-sy">.</span><span class="crayon-v">fingerprints</span><span class="crayon-o">:</span>
           </div>
           <div class="crayon-line" id="crayon-5fc4fda0306cd563128641-20">
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-st">
-            return
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-t">
-            True
-           </span>
+           <span class="crayon-h"></span><span class="crayon-st">return</span><span class="crayon-h"></span><span class="crayon-t">True</span>
           </div>
           <div class="crayon-line" id="crayon-5fc4fda0306cd563128641-21">
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-r">
-            self
-           </span>
-           <span class="crayon-sy">
-            .
-           </span>
-           <span class="crayon-v">
-            fingerprints
-           </span>
-           <span class="crayon-sy">
-            .
-           </span>
-           <span class="crayon-e">
-            add
-           </span>
-           <span class="crayon-sy">
-            (
-           </span>
-           <span class="crayon-v">
-            fp
-           </span>
-           <span class="crayon-sy">
-            )
-           </span>
+           <span class="crayon-h"></span><span class="crayon-r">self</span><span class="crayon-sy">.</span><span class="crayon-v">fingerprints</span><span class="crayon-sy">.</span><span class="crayon-e">add</span><span class="crayon-sy">(</span><span class="crayon-v">fp</span><span class="crayon-sy">)</span>
           </div>
           <div class="crayon-line" id="crayon-5fc4fda0306cd563128641-22">
           </div>
           <div class="crayon-line" id="crayon-5fc4fda0306cd563128641-23">
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-r">
-            def
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-e">
-            close
-           </span>
-           <span class="crayon-sy">
-            (
-           </span>
-           <span class="crayon-r">
-            self
-           </span>
-           <span class="crayon-sy">
-            ,
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-v">
-            reason
-           </span>
-           <span class="crayon-sy">
-            )
-           </span>
-           <span class="crayon-o">
-            :
-           </span>
+           <span class="crayon-h"></span><span class="crayon-r">def</span><span class="crayon-h"></span><span class="crayon-e">close</span><span class="crayon-sy">(</span><span class="crayon-r">self</span><span class="crayon-sy">,</span><span class="crayon-h"></span><span class="crayon-v">reason</span><span class="crayon-sy">)</span><span class="crayon-o">:</span>
           </div>
           <div class="crayon-line" id="crayon-5fc4fda0306cd563128641-24">
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-r">
-            self
-           </span>
-           <span class="crayon-sy">
-            .
-           </span>
-           <span class="crayon-v">
-            fingerprints
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-o">
-            =
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-t">
-            None
-           </span>
+           <span class="crayon-h"></span><span class="crayon-r">self</span><span class="crayon-sy">.</span><span class="crayon-v">fingerprints</span><span class="crayon-h"></span><span class="crayon-o">=</span><span class="crayon-h"></span><span class="crayon-t">None</span>
           </div>
           <div class="crayon-line" id="crayon-5fc4fda0306cd563128641-25">
           </div>
@@ -957,24 +558,10 @@ DUPEFILTER_CLASS = "project_name.bloom_filter.BLOOMDupeFilter"
           <div class="crayon-line" id="crayon-5fc4fda0306d8014943915-1">
           </div>
           <div class="crayon-line" id="crayon-5fc4fda0306d8014943915-2">
-           <span class="crayon-c">
-            # Somewhere in settings.py
-           </span>
+           <span class="crayon-c"># Somewhere in settings.py</span>
           </div>
           <div class="crayon-line" id="crayon-5fc4fda0306d8014943915-3">
-           <span class="crayon-v">
-            DUPEFILTER_CLASS
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-o">
-            =
-           </span>
-           <span class="crayon-h">
-           </span>
-           <span class="crayon-s">
-            "project_name.bloom_filter.BLOOMDupeFilter"
-           </span>
+           <span class="crayon-v">DUPEFILTER_CLASS</span><span class="crayon-h"></span><span class="crayon-o">=</span><span class="crayon-h"></span><span class="crayon-s">"project_name.bloom_filter.BLOOMDupeFilter"</span>
           </div>
           <div class="crayon-line" id="crayon-5fc4fda0306d8014943915-4">
           </div>
