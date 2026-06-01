@@ -536,3 +536,9 @@ img {
         font-size: 1rem;
     }
 }
+
+
+/* Hide Crayon plain text textarea overlapping code blocks */
+.crayon-plain-wrap, .crayon-plain {
+    display: none !important;
+}
