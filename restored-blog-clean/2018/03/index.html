@@ -13,12 +13,7 @@
 <html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 <!--<![endif]-->
 <head profile="http://gmpg.org/xfn/11">
-
 <script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
-
-
-
-
 <!-- End Wayback Rewrite JS Include -->
 <link href="http://gmpg.org/xfn/11" rel="profile"/>
 <meta content="text/html;chartset=UTF-8" http-equiv="content-type"/>
@@ -32,7 +27,6 @@
 <link href="//web.archive.org/web/20201130131014/http://s.w.org/" rel="dns-prefetch"/>
 <link href="http://web.archive.org/web/20201130131014/http://alexeyvishnevsky.com/feed/" rel="alternate" title="Alexey Vishnevsky » Feed" type="application/rss+xml"/>
 <link href="http://web.archive.org/web/20201130131014/http://alexeyvishnevsky.com/comments/feed/" rel="alternate" title="Alexey Vishnevsky » Comments Feed" type="application/rss+xml"/>
-
 <style type="text/css">
 img.wp-smiley,
 img.emoji {
@@ -47,10 +41,6 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-
-
-
-
 <style id="news-typewriter-inline-css" type="text/css">
 
                 .pearl-type-wrap {
@@ -71,30 +61,13 @@ img.emoji {
                 
                 
 </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <link href="http://alexeyvishnevsky.com/wp-json/" rel="https://api.w.org/"/>
 <link href="http://alexeyvishnevsky.com/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
 <link href="http://alexeyvishnevsky.com/wp-includes/wlwmanifest.xml" rel="wlwmanifest" type="application/wlwmanifest+xml"/>
-<meta content="WordPress 4.7.19" name="generator">
-
+<meta content="WordPress 4.7.19" name="generator"/>
 <link href="//web.archive.org/web/20201130131014/http://v0.wordpress.com/" rel="dns-prefetch"/>
 <style type="text/css">img#wpstats{display:none}</style> <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
-</meta><link href="../../css/main.css" rel="stylesheet" type="text/css"/></head>
+<link href="../../css/main.css" rel="stylesheet" type="text/css"/></head>
 <body class="archive date">
 <div id="header"><a class="title" href="../../index.html"><div id="title">Alexey Vishnevsky</div></a><div id="description">There is always one more bug to fix</div></div>
 <div id="nav-container">
@@ -108,7 +81,7 @@ img.emoji {
 <p>Stupid sort is the sort that just randomly shuffles the array until it eventually becomes sorted.</p>
 <p>In spite of the fact that stupid sort is not so popular in production environment, it may be mentioned as an opening question at programming interview of any level. The discussion about optimizing this kind of search may be very interesting and useful for better understanding some sorting techniques.</p>
 <p>In a nutshell stupid sort may be written like this:</p>
-<p><a href="../../wp-content/uploads/2018/03/Screenshot_2018-03-20-23-40-58_com.quseit.qlua5pro2.png"><img alt="" class="aligncenter wp-image-496" height="711" sizes="(max-width: 400px) 100vw, 400px" src="../../wp-content/uploads/2018/03/Screenshot_2018-03-20-23-40-58_com.quseit.qlua5pro2-169x300.png" srcset="http://web.archive.org/web/20201130131014im_/http://alexeyvishnevsky.com/wp-content/uploads/2018/03/Screenshot_2018-03-20-23-40-58_com.quseit.qlua5pro2-169x300.png 169w, http://web.archive.org/web/20201130131014im_/http://alexeyvishnevsky.com/wp-content/uploads/2018/03/Screenshot_2018-03-20-23-40-58_com.quseit.qlua5pro2-576x1024.png 576w, http://web.archive.org/web/20201130131014im_/http://alexeyvishnevsky.com/wp-content/uploads/2018/03/Screenshot_2018-03-20-23-40-58_com.quseit.qlua5pro2.png 720w" width="400"/></a></p>
+<p><a href="../../wp-content/uploads/2018/03/Screenshot_2018-03-20-23-40-58_com.quseit.qlua5pro2.png"><img alt="" class="aligncenter wp-image-496" height="711" sizes="(max-width: 400px) 100vw, 400px" src="../../wp-content/uploads/2018/03/Screenshot_2018-03-20-23-40-58_com.quseit.qlua5pro2-169x300.png" width="400"/></a></p>
 <p>The average running time of this algorithm is terribly long. For each permutation (out of n!) we need to verify the order of all the elements in the array (n elements) which gives us O (n*n!). On my Hexa-core Xiaomi Redmi 3 phone this process is very slow even for n=10 ending up with more than 36 million operations. In the worst case, the running time of the algorithm is unbounded, for the same reason that a tossed coin might turn up heads any number of times in a row.</p>
 <p>The best case occurs if the list as given is already sorted; in this case the expected time complexity is O(<span style="font-family: monospace;">n)</span></p>
 <p>For any collection of fixed size, the expected running time of the algorithm is finite for much the same reason that the <a href="http://web.archive.org/web/20201130131014/https://en.m.wikipedia.org/wiki/Infinite_monkey_theorem" title="Infinite monkey theorem">infinite monkey theorem</a> holds: there is non-zero probability of getting  right permutation, so given an unbounded number of tries it will <a href="http://web.archive.org/web/20201130131014/https://en.m.wikipedia.org/wiki/Almost_surely" title="Almost surely">almost surely</a> eventually be chosen.</p>
@@ -139,7 +112,7 @@ def shuffle(arr, l, r):
 </div>
 <!-- [Format Time: 0.0055 seconds] -->
 <p>Now, after adding these new rules, my phone was able to sort 100 elements in less than a second.</p>
-<p><a href="../../wp-content/uploads/2018/03/Screenshot_2018-03-13-23-49-09_com.quseit.qlua5pro2.png"><img alt="" class="aligncenter wp-image-465" height="711" sizes="(max-width: 400px) 100vw, 400px" src="../../wp-content/uploads/2018/03/Screenshot_2018-03-13-23-49-09_com.quseit.qlua5pro2-169x300.png" srcset="http://web.archive.org/web/20201130131014im_/http://alexeyvishnevsky.com/wp-content/uploads/2018/03/Screenshot_2018-03-13-23-49-09_com.quseit.qlua5pro2-169x300.png 169w, http://web.archive.org/web/20201130131014im_/http://alexeyvishnevsky.com/wp-content/uploads/2018/03/Screenshot_2018-03-13-23-49-09_com.quseit.qlua5pro2-576x1024.png 576w, http://web.archive.org/web/20201130131014im_/http://alexeyvishnevsky.com/wp-content/uploads/2018/03/Screenshot_2018-03-13-23-49-09_com.quseit.qlua5pro2.png 720w" width="400"/></a></p>
+<p><a href="../../wp-content/uploads/2018/03/Screenshot_2018-03-13-23-49-09_com.quseit.qlua5pro2.png"><img alt="" class="aligncenter wp-image-465" height="711" sizes="(max-width: 400px) 100vw, 400px" src="../../wp-content/uploads/2018/03/Screenshot_2018-03-13-23-49-09_com.quseit.qlua5pro2-169x300.png" width="400"/></a></p>
 <p>Although the running time has decreased, it still increases very fast, when the number of elements in the array adds up. For example, to sort 1000 elements takes about 100 seconds. We increased the array size by x10 and got the x1000 slow down. This allows us to estimate our algorithm by O(n^3). It turns out that if we only could split our 1000 elements array to 10 sub-arrays by 100 elements and then sort each other separately, this would take us less than 10*(1 sec) = 10 seconds (instead of 1000). The only thing we should figure out is how to split the array in such way that the merge back would be trivial. Apparently we can change our shuffling function a little bit so that after shuffling the value of elements in the left part of the array will be smaller than those of the elements in the right part. Shuffling written in this way may be called many times on the same part of the array until it eventually becomes sorted (stupid-sort technique). Then, after all parts of the array are sorted, the entire array becomes sorted (trivially).</p>
 <p>Let us modify our “shuffle” to swap elements with respect to some randomly chosen element of the array (pivot):</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
 <div class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" id="crayon-5fc4ef36794d8477869357" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 18px !important;">
@@ -361,14 +334,8 @@ If above timestamp is not current time, this page is cached.</p> -->
 <div style="display:none">
 </div>
 <div id="su-footer-links" style="text-align: center;"></div>
-
-
-
-
 <!-- mbYTPlayer -->
-
 <!-- end mbYTPlayer -->
-
 <script type="text/javascript">
 	_stq = window._stq || [];
 	_stq.push([ 'view', {v:'ext',j:'1:4.6',blog:'124545213',post:'0',tz:'0',srv:'alexeyvishnevsky.com'} ]);

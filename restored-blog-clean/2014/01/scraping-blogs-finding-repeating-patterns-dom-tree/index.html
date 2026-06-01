@@ -13,12 +13,7 @@
 <html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 <!--<![endif]-->
 <head profile="http://gmpg.org/xfn/11">
-
 <script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
-
-
-
-
 <!-- End Wayback Rewrite JS Include -->
 <link href="http://gmpg.org/xfn/11" rel="profile"/>
 <meta content="text/html;chartset=UTF-8" http-equiv="content-type"/>
@@ -26,8 +21,8 @@
 <meta charset="utf-8"/>
 <title>Extracting textual time-based content from blog page using LCA techique on a DOM tree. | Alexey Vishnevsky</title>
 <!-- SEO Ultimate (http://www.seodesignsolutions.com/wordpress-seo/) -->
-<meta content="article" property="og:type">
-<meta content="Extracting textual time-based content from blog page using LCA techique on a DOM tree." property="og:title"/>
+<meta content="article" property="og:type"/>
+<meta content="Extracting textual time-based content from blog page using LCA techique on a DOM tree." property="og:title">
 <meta content="http://web.archive.org/web/20201130134435/http://alexeyvishnevsky.com/2014/01/scraping-blogs-finding-repeating-patterns-dom-tree/" property="og:url"/>
 <meta content="2014-01-20" property="article:published_time"/>
 <meta content="2015-11-12" property="article:modified_time"/>
@@ -45,7 +40,6 @@
 <link href="http://web.archive.org/web/20201130134435/http://alexeyvishnevsky.com/feed/" rel="alternate" title="Alexey Vishnevsky » Feed" type="application/rss+xml"/>
 <link href="http://web.archive.org/web/20201130134435/http://alexeyvishnevsky.com/comments/feed/" rel="alternate" title="Alexey Vishnevsky » Comments Feed" type="application/rss+xml"/>
 <link href="http://web.archive.org/web/20201130134435/http://alexeyvishnevsky.com/2014/01/scraping-blogs-finding-repeating-patterns-dom-tree/feed/" rel="alternate" title="Alexey Vishnevsky » Extracting textual time-based content from blog page using LCA techique on a DOM tree. Comments Feed" type="application/rss+xml"/>
-
 <style type="text/css">
 img.wp-smiley,
 img.emoji {
@@ -60,10 +54,6 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-
-
-
-
 <style id="news-typewriter-inline-css" type="text/css">
 
                 .pearl-type-wrap {
@@ -84,22 +74,6 @@ img.emoji {
                 
                 
 </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <link href="http://alexeyvishnevsky.com/wp-json/" rel="https://api.w.org/"/>
 <link href="http://alexeyvishnevsky.com/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
 <link href="http://alexeyvishnevsky.com/wp-includes/wlwmanifest.xml" rel="wlwmanifest" type="application/wlwmanifest+xml"/>
@@ -110,7 +84,6 @@ img.emoji {
 <link href="http://web.archive.org/web/20201130134435/http://wp.me/p8qzTL-19" rel="shortlink"/>
 <link href="http://web.archive.org/web/20201130134435/http://alexeyvishnevsky.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Falexeyvishnevsky.com%2F2014%2F01%2Fscraping-blogs-finding-repeating-patterns-dom-tree%2F" rel="alternate" type="application/json+oembed"/>
 <link href="http://web.archive.org/web/20201130134435/http://alexeyvishnevsky.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Falexeyvishnevsky.com%2F2014%2F01%2Fscraping-blogs-finding-repeating-patterns-dom-tree%2F&amp;format=xml" rel="alternate" type="text/xml+oembed"/>
-
 <link href="//web.archive.org/web/20201130134435/http://v0.wordpress.com/" rel="dns-prefetch"/>
 <style type="text/css">img#wpstats{display:none}</style> <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 </meta><link href="../../../css/main.css" rel="stylesheet" type="text/css"/></head>
@@ -203,7 +176,7 @@ main()
 <p>Fortunately there is an efficient method to identify the posts boundaries by finding the Lowest Common Ancestor (LCA) for given dates elements in a DOM tree. Then having the dates LCA’s we can be pretty sure that its children provide the required entry points to the posts itself. Below is the picture that visualizes the idea:</p>
 <p style="text-align: center;"><a href="../../../wp-content/uploads/2014/01/Screenshot-from-2014-01-19-183138.png"><img alt="Screenshot from 2014-01-19 18:31:38" class="wp-image-115 aligncenter" height="125" src="../../../wp-content/uploads/2014/01/Screenshot-from-2014-01-19-183138.png" width="159"/></a></p>
 <p style="text-align: left;"><span style="font-size: 13px;">Another, more complex case such as multiple post threads in the page:</span></p>
-<p><a href="../../../wp-content/uploads/2014/01/Screenshot-from-2014-01-19-175745.png"><img alt="Screenshot from 2014-01-19 17:57:45" class="wp-image-111 aligncenter" height="135" sizes="(max-width: 252px) 100vw, 252px" src="../../../wp-content/uploads/2014/01/Screenshot-from-2014-01-19-175745.png" srcset="http://web.archive.org/web/20201130134435im_/http://alexeyvishnevsky.com/wp-content/uploads/2014/01/Screenshot-from-2014-01-19-175745.png 389w, http://web.archive.org/web/20201130134435im_/http://alexeyvishnevsky.com/wp-content/uploads/2014/01/Screenshot-from-2014-01-19-175745-300x161.png 300w" width="252"/></a></p>
+<p><a href="../../../wp-content/uploads/2014/01/Screenshot-from-2014-01-19-175745.png"><img alt="Screenshot from 2014-01-19 17:57:45" class="wp-image-111 aligncenter" height="135" sizes="(max-width: 252px) 100vw, 252px" src="../../../wp-content/uploads/2014/01/Screenshot-from-2014-01-19-175745.png" width="252"/></a></p>
 <p>All these cases are supported by the following code:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
 <div class="crayon-syntax crayon-theme-eclipse crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" id="crayon-5fc4f742d6c7c981627403" style=" margin-top: 12px; margin-bottom: 12px; font-size: 8px !important; line-height: 18px !important;">
 <div class="crayon-plain-wrap"><textarea class="crayon-plain print-no" data-settings="dblclick" readonly="" style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 8px !important; line-height: 18px !important;" wrap="soft">
@@ -357,16 +330,8 @@ If above timestamp is not current time, this page is cached.</p> -->
 <div style="display:none">
 </div>
 <div id="su-footer-links" style="text-align: center;"></div>
-
-
-
-
-
-
 <!-- mbYTPlayer -->
-
 <!-- end mbYTPlayer -->
-
 <script type="text/javascript">
 	_stq = window._stq || [];
 	_stq.push([ 'view', {v:'ext',j:'1:4.6',blog:'124545213',post:'71',tz:'0',srv:'alexeyvishnevsky.com'} ]);
